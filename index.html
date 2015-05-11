@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Inmate Payroll Calculator</title>
+  <link rel="stylesheet" href="stylesheets/payroll.css" type="text/css">
+  </head>
+  <body>
+  
+    <h1>Inmate Payroll Calculator</h1>
+    
+    <form action="#" method="post" id="payrollForm">
+      <ol>
+        <li>
+          <label for="docNumberField">DOC Number:</label>
+          <input type="number" id="docNumberField" required>
+        </li>
+        <li>
+          <label for="lastNameField">Inmate Last Name:</label>
+          <input type="text" id="lastNameField" required>
+        </li>
+          <li>
+          <label for="payRateField">Pay Rate:</label>
+          <input type="number" id="payRateField" min="1" max="5" required>
+        </li>
+      </ol>
+      <table>
+        <caption>Enter times in military format (i.e. 1:00 p.m. = 1300)<br>
+             <small>(Leave "In time" and "Out Time" fields "0000" for days off.)</small>
+        </caption>
+        <tr>
+          <th>Week 1</th>
+          <th>In Time</th>
+          <th>Out Time</th>
+          <th>Week 2</th>
+          <th>In Time</th>
+          <th>Out Time</th>
+        </tr>
+        <tr>
+          <td>Sunday:</td>
+          <td>
+            <label for="weekOneSundayInField"></label>
+            <input type="number" id="weekOneSundayInField"  placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneSundayOutField"></label>
+            <input type="number" id="weekOneSundayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Sunday:</td>
+          <td>
+            <label for="weekTwoSundayInField"></label>
+            <input type="number" id="weekTwoSundayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoSundayOutField"></label>
+            <input type="number" id="weekTwoSundayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+        <tr>
+          <td>Monday:</td>
+          <td>
+            <label for="weekOneMondayInField"></label>
+            <input type="number" id="weekOneMondayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneMondayOutField"></label>
+            <input type="number" id="weekOneMondayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Monday:</td>
+          <td>
+            <label for="weekTwoMondayInField"></label>
+            <input type="number" id="weekTwoMondayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoMondayOutField"></label>
+            <input type="number" id="weekTwoMondayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+        <tr>
+          <td>Tuesday:</td>
+          <td>
+            <label for="weekOneTuesdayInField"></label>
+            <input type="number" id="weekOneTuesdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneTuesdayOutField"></label>
+            <input type="number" id="weekOneTuesdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Tuesday:</td>
+          <td>
+            <label for="weekTwoTuesdayInField"></label>
+            <input type="number" id="weekTwoTuesdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoTuesdayOutField"></label>
+            <input type="number" id="weekTwoTuesdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+        <tr>
+          <td>Wednesday:</td>
+          <td>
+            <label for="weekOneWednesdayInField"></label>
+            <input type="number" id="weekOneWednesdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneWednesdayOutField"></label>
+            <input type="number" id="weekOneWednesdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Wednesday:</td>
+          <td>
+            <label for="weekTwoWednesdayInField"></label>
+            <input type="number" id="weekTwoWednesdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoWednesdayOutField"></label>
+            <input type="number" id="weekTwoWednesdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+        <tr>
+          <td>Thursday:</td>
+          <td>
+            <label for="weekOneThursdayInField"></label>
+            <input type="number" id="weekOneThursdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneThursdayOutField"></label>
+            <input type="number" id="weekOneThursdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Thursday:</td>
+          <td>
+            <label for="weekTwoThursdayInField"></label>
+            <input type="number" id="weekTwoThursdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoThursdayOutField"></label>
+            <input type="number" id="weekTwoThursdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+        <tr>
+          <td>Friday:</td>
+          <td>
+            <label for="weekOneFridayInField"></label>
+            <input type="number" id="weekOneFridayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneFridayOutField"></label>
+            <input type="number" id="weekOneFridayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Friday:</td>
+          <td>
+            <label for="weekTwoFridayInField"></label>
+            <input type="number" id="weekTwoFridayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoFridayOutField"></label>
+            <input type="number" id="weekTwoFridayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+        <tr>
+          <td>Saturday:</td>
+          <td>
+            <label for="weekOneSaturdayInField"></label>
+            <input type="number" id="weekOneSaturdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekOneSaturdayOutField"></label>
+            <input type="number" id="weekOneSaturdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>Saturday:</td>
+          <td>
+            <label for="weekTwoSaturdayInField"></label>
+            <input type="number" id="weekTwoSaturdayInField" placeholder="0000" min="0" max="2400">
+          </td>
+          <td>
+            <label for="weekTwoSaturdayOutField"></label>
+            <input type="number" id="weekTwoSaturdayOutField" placeholder="0000" min="0" max="2400">
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Add Record">
+      <input type="reset" value= "Reset Form">
+    </form>
+    <div id="outputArea">
+    </div>
+
+
+  <pre><script src="js/inmatePayrollCalculator.js"></script></pre>
+     
+  </body>
+  <footer>
+    <p><small>Copyright &copy; Josh Prueher, 2015</small></p>
+  </footer>
+</html>
+

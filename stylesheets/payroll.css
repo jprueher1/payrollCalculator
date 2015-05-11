@@ -1,0 +1,28 @@
+body{
+background-color: #D4966A;
+color: #051838;
+padding-left: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form  > ol {
+  list-style: none;
+  
+}
+
+form  > ol  > li  > label{
+  display: inline-block;
+  width: 15%;
+}
+
+
+footer{
+  text-align: center;
+}
+
+#outputArea {
+  padding-top: 20px;
+}
